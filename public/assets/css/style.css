@@ -1,7 +1,39 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 50px;
+}
 header h1 {
   text-align: center;
-  background-color: black;
+  background-color: salmon;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 50px 0;
+  margin: 0;
+}
+header ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  background-color: rgb(246, 230, 228);
+}
+header ul li {
+  display: inline;
+  margin: 10px;
+}
+header ul li a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: salmon;
+  color: white;
+  padding: 10px 0;
 }
