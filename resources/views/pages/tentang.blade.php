@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('judul-tab', 'Halaman Tentang')
 
 @section('konten-utama')
 

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('judul-tab', 'Halaman Profil')
 
 @section('konten-utama')
 
