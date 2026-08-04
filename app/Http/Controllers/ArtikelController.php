@@ -37,7 +37,9 @@ class ArtikelController extends Controller
     public function index()
     {
         $data_artikel = $this->data_artikel;
-        return view('pages.daftar-artikel');
+        return view('pages.daftar-artikel', [
+            'data_artikel' => $data_artikel
+        ]);
     }
 
     // Create

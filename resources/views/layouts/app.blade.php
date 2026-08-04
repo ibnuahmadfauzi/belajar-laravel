@@ -18,6 +18,7 @@
             <li><a href="/profil">Profil</a></li>
             <li><a href="/kontak">Kontak</a></li>
             <li><a href="/tentang">Tentang</a></li>
+            <li><a href="/artikel">Artikel</a></li>
         </ul>
     </header>
 
