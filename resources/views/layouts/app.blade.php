@@ -22,7 +22,9 @@
     </header>
 
     <!-- konten utama -->
-    @yield('konten-utama')
+    <div class="main-content">
+        @yield('konten-utama')
+    </div>
 
     <!-- footer -->
     <footer>

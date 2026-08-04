@@ -37,3 +37,8 @@ footer {
   color: white;
   padding: 10px 0;
 }
+
+.main-content {
+  width: 80%;
+  margin: auto;
+}
