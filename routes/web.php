@@ -1,19 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\TentangController;
 
-Route::get('/', function () {
-    return view('pages.home'); // pages/home
-});
-
-// (nama route, kembalian / anonymous function)
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/profil', [ProfilController::class, 'index']);
-
-Route::get('/kontak', function () {
-    return view('pages.kontak'); // pages/profil
-});
-
-Route::get('/tentang', function () {
-    return view('pages.tentang'); // pages/profil
-});
+Route::get('/kontak', [KontakController::class, 'index']);
+Route::get('/tentang', [TentangController::class, 'index']);
