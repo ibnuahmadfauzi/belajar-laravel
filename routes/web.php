@@ -7,6 +7,6 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\TentangController;
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/profil', [ProfilController::class, 'index']);
+Route::get('/profil/{nama?}', [ProfilController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
 Route::get('/tentang', [TentangController::class, 'index']);
