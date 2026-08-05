@@ -46,11 +46,28 @@ class ArtikelController extends Controller
     public function create() {}
 
     // Read
-    public function show() {}
+    public function show($id)
+    {
+        // $artikel = null;
+
+        // foreach ($this->data_artikel as $item) {
+        //     if ($item['id'] == $id) {
+        //         $artikel = $item;
+        //         break;
+        //     }
+        // }
+
+        $artikel = collect($this->data_artikel)->firstWhere('id', $id);
+
+        return view('pages.detail-artikel', [
+            'data_artikel' => $artikel,
+        ]);
+    }
 
     // Update
     public function update() {}
+    public function edit() {}
 
     // Delete
-    public function delete() {}
+    public function destroy() {}
 }

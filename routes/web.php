@@ -14,3 +14,4 @@ Route::get('/tentang', [TentangController::class, 'index']);
 
 // Routing untuk CRUD artikel
 Route::get('/artikel', [ArtikelController::class, 'index']);
+Route::get('/artikel/{id}', [ArtikelController::class, 'show']);

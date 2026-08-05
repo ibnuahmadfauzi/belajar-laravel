@@ -13,7 +13,7 @@
         {{ $artikel['kategori'] }}
     </p>
     <p>
-        <a href="#">Baca selengkapnya</a>
+        <a href={{ "/artikel/" . $artikel['id'] }}>Baca selengkapnya</a>
     </p>
 </div>
 
